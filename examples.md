@@ -1,7 +1,7 @@
 # Twinkle Twinkle Little Star
 
-lana ta no. (It is in the sky) [push the star]
+lanaki ta no. (It is in the sky) [push the star]
 
-se kimuka lamu to. (It gives light to many places) [push the star's light]
+se misono na ke no. (I don't know what it is)
 
-muna no. (The light it gives is small) []
+kimuna lamu to. (It gives small light to many places) [pops the star]

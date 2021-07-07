@@ -48,15 +48,15 @@ No, To, and Tu all pop either 2 or 3 items from the stack and push a single item
 
 ### No - Ownership
 
-"A B no" means A owns B and pushes the owned item onto the stack. Ownership can mean literal ownership, as in a person's possesions, or it can mean in or on something.
+No pops two items from the stack, indicates that the lower item owns the higher item. By default, it pushes the owned item back onto the stack. If the owner is a ka item, its ka is removed, and it is pushed instead.
 
 ### Tu - Travel
 
-"A B tu" means A goes to or travels to B and pushes the less determinate items onto the stack.
+Tu pops two items from the stack and indicates that the lower item "moves to" the higher item. This can mean literal travel or something more abstract, like a state change. If either of the items is a ka item, its ka is removed, and it is pushed onto the stack.
 
 ### To - Transactions
 
-"A B C to" means B goes from A to B and pushes the least determinate item onto the stack. This usually means the exchange of an item from one entity to another. This can also mean travel from a start to an end.
+To pops three items from the stack and indicates that the middle item "moves" from the lowest item to the highest item. This can mean literal travel or something more abstract. If any of the items is a ka item, its ka is removed, and it is pushed onto the stack.
 
 ## Na and Ni - Adjacent concepts
 
@@ -147,40 +147,10 @@ Le copies the second item from the top of the stack to the top of the stack.
 
 mi mini **le** **le** ke no no => I am yours. You are mine.
 
-# Determinacy
+### Ne - Drop
 
-No, To and Tu push onto the stack the modified input that is least determinate.
+Ne pops an item from the top of the stack and pushes nothing.
 
-Root words have a base indeterminacy, while function words modify it.
+minisono se kika no. **ne** kinaka no. => Are you happy? Are you sad?
 
-| Indeterminacy | Roots          |
-| ------------- | -------------- |
-| 1             | mi             |
-| 2             | ki             |
-| 3             | ta, la, si, so |
-
-Some function words increase the indeterminacy of an item.
-
-| Words           | Indeterminacy |
-| --------------- | ------------- |
-| ka              | +10           |
-| na (on mi item) | +3            |
-| everything else | +0            |
-
-## Examples
-
-In these examples, the least determinate term is in bold.
-
-**mina** ki mi to => pushes "my friend" (literally "the person who gives goodness to me") onto the stack
-
-mina **kika** mi to => pushes "the goodness they give me" onto the stack
-
-mina ki **minaka** => pushes "his friend" (literally "the person he gives goodness to") onto the stack.
-
-la **mina** no => The person who is at the place (The place owns the person)
-
-**mina** la no => The person who owns the place (The person owns the place)
-
-**laka** mina no => The place where the person is (The place owns the person)
-
-mina **laka** no => THe place the person owns (The person owns the place)
+The first no pushes kika onto the stack. However, we want to refer to minisono again, so we use ne to pop kika.
