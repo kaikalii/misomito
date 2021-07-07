@@ -5,7 +5,7 @@ Misomito has 5 vowels and 6 syllables, but not all combinations are valid.
 |     | K             | L     | M      | N         | S           | T           |
 | --- | ------------- | ----- | ------ | --------- | ----------- | ----------- |
 | A   | inteterminate | place | or     | negative  |             | it          |
-| E   | swap          | over  |        | drop      | dup         |             |
+| E   | swap          | over  | rotate | drop      | dup         |             |
 | I   | goodness      |       | person | alternate | time        |             |
 | O   |               |       | and    | ownership | information | transaction |
 | U   |               |       | many   |           |             | travel      |
@@ -40,7 +40,7 @@ So is information.
 
 # Functions
 
-Misomito has 13 function words. These words pop/push other items from/to the stack.
+Misomito has 14 function words. These words pop/push other items from/to the stack.
 
 ## No, To, and Tu - Relationships
 
@@ -139,7 +139,7 @@ mi **se** mi tu => I am staying where I am.
 
 Se swaps the two items on top of the stack.
 
-mika ki mi to se somu no. mi **ke** tu. => My friend is smart. I am meeting him.
+mikakimito se somu no. mi **ke** tu. => My friend is smart. I am meeting him.
 
 ### Le - Over
 
@@ -147,10 +147,16 @@ Le copies the second item from the top of the stack to the top of the stack.
 
 mi mini **le** **le** ke no no => I am yours. You are mine.
 
+### Me - Rotate
+
+Me removes the third item in the stack and pushes it to the top.
+
+mikakimito mi so **me** to => I talk to my friend.
+
 ### Ne - Drop
 
 Ne pops an item from the top of the stack and pushes nothing.
 
 minisono se kika no. **ne** kinaka no. => Are you happy? Are you sad?
 
-The first no pushes kika onto the stack. However, we want to refer to minisono again, so we use ne to pop kika.
+The first no pushes ki onto the stack. However, we want to refer to minisono again, so we use ne to pop kika.
