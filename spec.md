@@ -1,14 +1,20 @@
+# Introduction
+
+Misomito is a minimalist constructred spoken language.
+
+It combines the simplicity of [Toki Pona](https://tokipona.org/) with the programatic formalism of [Lojban](https://mw.lojban.org/index.php?title=Lojban&setlang=en-US).
+
 # Letters and Syllables
 
-Misomito has 5 vowels and 6 syllables, but not all combinations are valid.
+Misomito has 5 vowels and 6 consonants, but not all combinations are valid.
 
-|     | K             | L     | M      | N         | S           | T           |
-| --- | ------------- | ----- | ------ | --------- | ----------- | ----------- |
-| A   | inteterminate | place | or     | negative  |             | it          |
-| E   | swap          | over  | rotate | drop      | dup         |             |
-| I   | goodness      |       | person | alternate | time        |             |
-| O   |               |       | and    | ownership | information | transaction |
-| U   |               |       | many   |           |             | travel      |
+|     | K             | L      | M      | N         | S           | T           |
+| --- | ------------- | ------ | ------ | --------- | ----------- | ----------- |
+| A   | inteterminate | place  | or     | negative  |             | it          |
+| E   | swap          | over   | rotate | drop      | dup         |             |
+| I   | goodness      |        | person | alternate | time        |             |
+| O   |               | action | and    | ownership | information | transaction |
+| U   |               |        | many   |           |             | travel      |
 
 # Roots
 
@@ -44,7 +50,7 @@ Misomito has 14 function words. These words pop/push other items from/to the sta
 
 ## No, To, and Tu - Relationships
 
-No, To, and Tu all pop either 2 or 3 items from the stack and push a single item back.
+No, To, and Tu all pop either 2 or 3 items from the stack and may push a single item back.
 
 ### No - Ownership
 
@@ -160,3 +166,15 @@ Ne pops an item from the top of the stack and pushes nothing.
 minisono se kika no. **ne** kinaka no. => Are you happy? Are you sad?
 
 The first no pushes ki onto the stack. However, we want to refer to minisono again, so we use ne to pop kika.
+
+# Lo
+
+Lo is a special word that does not pop directly from the stack.
+
+Lo pushes that relationship created by the most recently used no, to, or tu (rather than one of its components) onto the stack.
+
+_minaka_ ta mi to. ki mi to. => I like the _person_ who gives it to me.
+
+mina _taka_ mi to. ki mi to. => I like the _thing_ they give to me.
+
+mina ta mi to. **lo** ki mi to. => I like **that** they give it to me.
